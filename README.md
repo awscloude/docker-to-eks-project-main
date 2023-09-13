@@ -34,4 +34,4 @@
 3. run kubectl commands to apply deployment and service yaml files
     * kubectl apply -f deployment.yaml
     * kubectl apply -f service.yaml
-4. go to load balancers, copy the dns name and paste in browser to see application is working
+4. go to load balancers, copy the dns name and paste in browser to see application is working..
