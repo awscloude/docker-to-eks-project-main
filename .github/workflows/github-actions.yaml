@@ -33,8 +33,8 @@ jobs:
       env:
         REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         REPOSITORY: test-workflow
-        #IMAGE_TAG: ${{ github.sha }}
-        IMAGE_TAG: $(echo ${{ github.sha | head -c7 }} )
+        IMAGE_TAG: ${{ github.sha | head -c7 }}
+        #IMAGE_TAG: $(echo ${{ github.sha | head -c7 }} )
       run: |
         docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
         docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
