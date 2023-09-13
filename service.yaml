@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: test-workflow
   name: node-app
 spec:
   selector:
