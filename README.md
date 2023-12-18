@@ -1,6 +1,6 @@
 # docker-to-eks-project
 
-## Steps
+## Steps ##
 
 ### Run application using docker on EC2 server
 
