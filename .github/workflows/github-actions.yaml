@@ -32,7 +32,7 @@ jobs:
     - name: Build, tag, and push docker image to Amazon ECR
       env:
         REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        REPOSITORY: test-workflow
+        REPOSITORY: eeeeeeeeee
         IMAGE_TAG: ${{ github.sha}}
         #IMAGE_TAG: $(echo ${{ github.sha | head -c7 }} )
       run: |
